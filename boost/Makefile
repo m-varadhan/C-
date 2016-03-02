@@ -1,8 +1,21 @@
-PROGRAMS    = scoped_ptr-1.1
+VERSION=1.1
+PROGRAMS    = scoped_ptr-$(VERSION) smart_ptr_test-$(VERSION) hash_map-$(VERSION)
 EXT = cc
 CPP=c++
+CFLAGS=-std=c++0x
 
-scoped_ptr-1.1_OBJS = scoped_ptr-1.1.o
+scoped_ptr-$(VERSION)_OBJS = scoped_ptr-$(VERSION).o
+smart_ptr_test-$(VERSION)_OBJS = smart_ptr_test-$(VERSION).o
+hash_map-$(VERSION)_OBJS = smart_ptr_test-$(VERSION).o
+
+
+.PHONY: all clean
+all: $(PROGRAMS)
+	@echo "Compliation Success $(PROGRAMS)"
+
+clean:
+	@echo "Cleaning  $(ALL_OBJS)"
+	rm -f $(ALL_OBJS) $(PROGRAMS)
 
 define DEFINE_AUTO_TEMPLATES
 $1: $$($1_OBJS)
@@ -19,10 +32,3 @@ endef
 #$(eval $(call DEFINE_AUTO_TEMPLATES,$(PROGRAMS)))
 
 $(foreach prog,$(PROGRAMS),$(eval $(call DEFINE_AUTO_TEMPLATES,$(prog))))
-
-.PHONY: all clean
-all: $(PROGRAMS)
-
-clean:
-	@echo "Cleaning  $(ALL_OBJS)"
-	rm -f $(ALL_OBJS) $(PROGRAMS)
