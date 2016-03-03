@@ -59,7 +59,7 @@ int main()
  
     // custom hash makes it possible to use custom types in unordered containers
     std::unordered_set<S> names = {obj, {"Bender", "Rodriguez"}, {"Leela", "Turanga"} };
-#if GCC_VERSION > 40600
+#if GCC_VERSION >= 40600
     for(auto& s: names) {
 #else
     for(auto it=names.begin(); it != names.end(); it++) {
