@@ -1,10 +1,11 @@
 VERSION=1.1
-PROGRAMS    = singleton-1.1
+PROGRAMS    = singleton-1.1 prototype-1.1
 EXT = cc
 CPP=c++
 CFLAGS=-std=c++0x
 
-singleton-$(VERSION)_OBJS = singleton-$(VERSION).o
+singleton-$(VERSION)_OBJS = singleton-$(VERSION).o 
+prototype-$(VERSION)_OBJS = prototype-$(VERSION).o
 
 .PHONY: all clean
 all: $(PROGRAMS)
