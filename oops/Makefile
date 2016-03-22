@@ -1,10 +1,11 @@
 VERSION=1.1
-PROGRAMS    = virtual_function-1.1
+PROGRAMS    = virtual_function-1.1 virtual_class-1.1
 EXT = cc
 CPP=c++
 CFLAGS=-std=c++0x
 
 virtual_function-$(VERSION)_OBJS = virtual_function-$(VERSION).o
+virtual_class-$(VERSION)_OBJS = virtual_class-$(VERSION).o
 
 .PHONY: all clean
 all: $(PROGRAMS)
