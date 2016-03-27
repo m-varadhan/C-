@@ -1,10 +1,13 @@
 VERSION=1.1
-PROGRAMS    = scoped_ptr-$(VERSION) smart_ptr_test-$(VERSION) hash_map-$(VERSION)
+PROGRAMS    = scoped_ptr-$(VERSION) smart_ptr_test-$(VERSION) \
+		shared_ptr-$(VERSION) 
+		#shared_ptr-$(VERSION) hash_map-$(VERSION)
 EXT = cc
 CPP=c++
 CFLAGS=-std=c++0x
 
 scoped_ptr-$(VERSION)_OBJS = scoped_ptr-$(VERSION).o
+shared_ptr-$(VERSION)_OBJS = shared_ptr-$(VERSION).o
 smart_ptr_test-$(VERSION)_OBJS = smart_ptr_test-$(VERSION).o
 hash_map-$(VERSION)_OBJS = smart_ptr_test-$(VERSION).o
 
