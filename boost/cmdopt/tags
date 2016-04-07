@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADEQUATE_WIDTH_FOR_OPTION_NAME	CustomOptionDescription.cpp	/^  const size_t ADEQUATE_WIDTH_FOR_OPTION_NAME = 20;$/;"	m	namespace:__anon1	file:
+CustomOptionDescription	CustomOptionDescription.cpp	/^  CustomOptionDescription::CustomOptionDescription(boost::shared_ptr<boost::program_options::option_description> option) :$/;"	f	class:rad::CustomOptionDescription
+CustomOptionDescription	CustomOptionDescription.hpp	/^  class CustomOptionDescription$/;"	c	namespace:rad
+DOES_NOT_HAVE_ARGUMENT	CustomOptionDescription.cpp	/^  const bool DOES_NOT_HAVE_ARGUMENT = false;$/;"	m	namespace:__anon1	file:
+ERROR_IN_COMMAND_LINE	main.cpp	/^  const size_t ERROR_IN_COMMAND_LINE = 1;$/;"	m	namespace:__anon2	file:
+ERROR_UNHANDLED_EXCEPTION	main.cpp	/^  const size_t ERROR_UNHANDLED_EXCEPTION = 2;$/;"	m	namespace:__anon2	file:
+HAS_ARGUMENT	CustomOptionDescription.cpp	/^  const bool HAS_ARGUMENT = true;$/;"	m	namespace:__anon1	file:
+LONG_NON_PREPENDED_IF_EXIST_ELSE_PREPENDED_SHORT	CustomOptionDescription.cpp	/^  const size_t LONG_NON_PREPENDED_IF_EXIST_ELSE_PREPENDED_SHORT = 0;$/;"	m	namespace:__anon1	file:
+LONG_PREPENDED_IF_EXIST_ELSE_PREPENDED_SHORT	CustomOptionDescription.cpp	/^  const size_t LONG_PREPENDED_IF_EXIST_ELSE_PREPENDED_SHORT = 1;$/;"	m	namespace:__anon1	file:
+OptionPrinter	OptionPrinter.hpp	/^  class OptionPrinter$/;"	c	namespace:rad
+RAD_CUSTOMOPTIONDESCRIPTION_HPP	CustomOptionDescription.hpp	12;"	d
+RAD_PRETTYOPTIONPRINTER_HPP	OptionPrinter.hpp	12;"	d
+SHORT_OPTION_STRING_LENGTH	CustomOptionDescription.cpp	/^  const size_t SHORT_OPTION_STRING_LENGTH = 2; \/\/ -x$/;"	m	namespace:__anon1	file:
+SHORT_PREPENDED_IF_EXIST_ELSE_LONG	CustomOptionDescription.cpp	/^  const size_t SHORT_PREPENDED_IF_EXIST_ELSE_LONG = 4;$/;"	m	namespace:__anon1	file:
+SUCCESS	main.cpp	/^  const size_t SUCCESS = 0;$/;"	m	namespace:__anon2	file:
+addOption	OptionPrinter.cpp	/^  void OptionPrinter::addOption(const CustomOptionDescription& optionDesc)$/;"	f	class:rad::OptionPrinter
+checkIfPositional	CustomOptionDescription.cpp	/^  void CustomOptionDescription::checkIfPositional(const boost::program_options::positional_options_description& positionalDesc)$/;"	f	class:rad::CustomOptionDescription
+formatRequiredOptionError	OptionPrinter.cpp	/^  void OptionPrinter::formatRequiredOptionError(boost::program_options::required_option& error)$/;"	f	class:rad::OptionPrinter
+getOptionUsageString	CustomOptionDescription.cpp	/^  std::string CustomOptionDescription::getOptionUsageString()$/;"	f	class:rad::CustomOptionDescription
+hasArgument_	CustomOptionDescription.hpp	/^    bool hasArgument_;$/;"	m	class:rad::CustomOptionDescription
+hasShort_	CustomOptionDescription.hpp	/^    bool hasShort_;$/;"	m	class:rad::CustomOptionDescription
+isPositional_	CustomOptionDescription.hpp	/^    bool isPositional_;$/;"	m	class:rad::CustomOptionDescription
+main	main.cpp	/^int main(int argc, char** argv)$/;"	f
+optionDescription_	CustomOptionDescription.hpp	/^    std::string optionDescription_;$/;"	m	class:rad::CustomOptionDescription
+optionDetails	OptionPrinter.cpp	/^  std::string OptionPrinter::optionDetails()$/;"	f	class:rad::OptionPrinter
+optionDisplayName_	CustomOptionDescription.hpp	/^    std::string optionDisplayName_;$/;"	m	class:rad::CustomOptionDescription
+optionFormatName_	CustomOptionDescription.hpp	/^    std::string optionFormatName_;$/;"	m	class:rad::CustomOptionDescription
+optionID_	CustomOptionDescription.hpp	/^    std::string optionID_;$/;"	m	class:rad::CustomOptionDescription
+options_	OptionPrinter.hpp	/^    std::vector<CustomOptionDescription> options_;$/;"	m	class:rad::OptionPrinter
+positionalOptionDetails	OptionPrinter.cpp	/^  std::string OptionPrinter::positionalOptionDetails()$/;"	f	class:rad::OptionPrinter
+positionalOptions_	OptionPrinter.hpp	/^    std::vector<CustomOptionDescription> positionalOptions_;$/;"	m	class:rad::OptionPrinter
+printStandardAppDesc	OptionPrinter.cpp	/^  void OptionPrinter::printStandardAppDesc(const std::string& appName,$/;"	f	class:rad::OptionPrinter
+rad	CustomOptionDescription.cpp	/^namespace rad$/;"	n	file:
+rad	CustomOptionDescription.hpp	/^namespace rad$/;"	n
+rad	OptionPrinter.cpp	/^namespace rad$/;"	n	file:
+rad	OptionPrinter.hpp	/^namespace rad$/;"	n
+required_	CustomOptionDescription.hpp	/^    bool required_;$/;"	m	class:rad::CustomOptionDescription
+usage	OptionPrinter.cpp	/^  std::string OptionPrinter::usage()$/;"	f	class:rad::OptionPrinter
