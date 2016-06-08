@@ -1,12 +1,17 @@
 VERSION=1.1
-PROGRAMS    = singleton-1.1 prototype-1.1 AbstractFactory-1.1
+PROGRAMS    = singleton-1.1 prototype-1.1 AbstractFactory-1.1 builder_shared
 EXT = cc
 CPP=c++
-CFLAGS=-std=c++0x 
+
+EXTRA_CFLAGS+=-I${HOME}/usr/local/include/
+EXTRA_CFLAGS+=-L${HOME}/usr/local/lib/
+
+CFLAGS=-std=c++11 $(EXTRA_CFLAGS) -DUSE_BOOST
 
 singleton-$(VERSION)_OBJS = singleton-$(VERSION).o 
 prototype-$(VERSION)_OBJS = prototype-$(VERSION).o
 AbstractFactory-$(VERSION)_OBJS = AbstractFactory-$(VERSION).o
+builder_shared_OBJS = builder_shared.o
 
 .PHONY: all clean
 all: $(PROGRAMS)
